@@ -12,9 +12,6 @@ function Footer() {
           <Link to="/projects" className="hover:text-primary">
             Projets
           </Link>
-          <Link to="/about" className="hover:text-primary">
-            À propos
-          </Link>
           <Link to="/contact" className="hover:text-primary">
             Contact
           </Link>
