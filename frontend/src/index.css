@@ -35,8 +35,6 @@
   --noise: 0;
 }
 
-
-
 @plugin "daisyui/theme" {
   name: "my_dark";
   default: false;
@@ -44,7 +42,7 @@
   color-scheme: "dark";
   --color-base-100: oklch(0% 0 0);
   --color-base-200: oklch(14% 0 0);
-  --color-base-300: oklch(44% 0.043 257.281);
+  --color-base-300: oklch(98% 0.003 247.858);
   --color-base-content: oklch(97.807% 0.029 256.847);
   --color-primary: oklch(58% 0.233 277.117);
   --color-primary-content: oklch(96% 0.018 272.314);
@@ -71,4 +69,3 @@
   --depth: 1;
   --noise: 1;
 }
-
