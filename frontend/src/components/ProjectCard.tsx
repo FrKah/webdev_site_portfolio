@@ -1,21 +1,24 @@
 // src/components/ProjectCard.jsx
-
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-
-function ProjectCard({ title, description, githubUrl, downloadUrl, images, skills }) {
+function ProjectCard({
+  title,
+  description,
+  githubUrl,
+  downloadUrl,
+  images,
+  skills,
+}) {
   return (
-    <Card className="rounded-2xl shadow-lg p-4 flex flex-col md:flex-row gap-6">
+    <div className="rounded-2xl shadow-lg p-4 flex flex-col md:flex-row gap-6">
       {/* Partie gauche */}
       <div className="md:w-1/2 space-y-4">
         <h2 className="text-2xl font-semibold">{title}</h2>
         <p className="text-muted-foreground">{description}</p>
         <div className="flex gap-4">
           <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-            <Button>Voir sur GitHub</Button>
+            <button className="Btn">Voir sur GitHub</button>
           </a>
           <a href={downloadUrl} target="_blank" rel="noopener noreferrer">
-            <Button variant="secondary">Télécharger</Button>
+            <button className="Btn">Télécharger</button>
           </a>
         </div>
       </div>
@@ -45,7 +48,7 @@ function ProjectCard({ title, description, githubUrl, downloadUrl, images, skill
           ))}
         </ul>
       </div>
-    </Card>
+    </div>
   );
 }
 

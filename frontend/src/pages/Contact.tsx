@@ -1,20 +1,24 @@
-import { Mail, Linkedin } from "lucide-react";
-
 function Contact() {
   return (
-    <div className="bg-black text-white h-full w-full flex flex-col items-center justify-center">
+    <div className="min-h-[calc(100vh-180px)] flex flex-row items-center justify-center">
       <div className="p-8 max-w-xl mx-auto text-center space-y-6">
         <h1 className="text-3xl font-bold">Contact</h1>
 
         <div className="space-y-2">
           <p className="text-lg">Me joindre par email :</p>
           <div className="space-y-1">
-            <a href="mailto:Frederic.Kah@eurecom.fr" className="text-primary hover:underline">
+            <a
+              href="mailto:Frederic.Kah@eurecom.fr"
+              className="text-primary hover:underline"
+            >
               Frederic.Kah@eurecom.fr - mon adresse mail étudiant
             </a>
             <br />
-            <a href="mailto:frederic.kah.ndf.a@gmail.com" className="text-primary hover:underline">
-              frederic.kah.ndf.a@gmail.com - mon adresse mail professionnelle
+            <a
+              href="mailto:frederic.kah.ing@gmail.com"
+              className="text-primary hover:underline"
+            >
+              frederic.kah.ing@gmail.com - mon adresse mail professionnelle
             </a>
           </div>
         </div>
@@ -27,7 +31,6 @@ function Contact() {
             rel="noopener noreferrer"
             className="inline-flex items-center text-primary hover:underline"
           >
-            <Linkedin className="mr-2" />
             Mon profil LinkedIn
           </a>
         </div>
