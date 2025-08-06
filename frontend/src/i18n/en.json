@@ -1,0 +1,57 @@
+{
+  "home": {
+    "imgAlt": "Frédéric Kah",
+    "name": "Frédéric Kah",
+    "title": "Full-stack Software Engineer",
+    "projectsBtn": "See my projects",
+    "cvBtn": "Download my CV",
+    "contactBtn": "Contact me",
+    "skillsBtn": "My Skills",
+    "formationBtn": "My Education",
+    "skillsTitle": "Skills",
+    "formationTitle": "Education"
+  },
+  "navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "contact": {
+    "title": "Contact",
+    "emailTitle": "Contact me by email:",
+    "studentEmail": "Frederic.Kah@eurecom.fr - my student email address",
+    "proEmail": "frederic.kah.ing@gmail.com - my professional email address",
+    "linkedinTitle": "Find me on LinkedIn:",
+    "linkedinBtn": "My LinkedIn profile"
+  },
+  "footer": {
+    "copyright": "© {{year}} Frédéric Kah. All rights reserved.",
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "projects": {
+    "title": "My Projects",
+    "volley": {
+      "title": "Website for Sophia Antipolis Inter-company Volleyball Association (A.S.I.E volley)",
+      "description": "<p>As part of a redesign project, I modernized the official website of the Sophia Antipolis Inter-company Sports Association (A.S.I.E.), dedicated to organizing their annual volleyball competition.</p><p>The original site, developed in PHP with a disorganized structure, required a complete overhaul both visually and functionally. I chose a modern and lightweight stack:</p><ul class='list-disc list-inside ml-4 mb-2'><li><b>Frontend:</b> TypeScript + TailwindCSS, with DaisyUI for elegant and consistent components.</li><li><b>Backend:</b> Node.js + Express, used only to relay requests to an existing MySQL database (results, rankings, match organization).</li></ul><p class='mt-2 mb-1 font-semibold'>Objectives achieved:</p><ul class='list-disc list-inside ml-4 mb-2'><li>A <b>responsive</b> design, suitable for both mobile and desktop.</li><li>Clear navigation with smart content reorganization.</li><li>Retention of essential features, while removing duplicates or obsolete parts.</li><li>Efficient deployment via free services (<b>Vercel</b> for frontend, <b>Render</b> for backend, <b>Aiven</b> for MySQL database).</li></ul><p><b>Skills developed:</b> interface redesign, database management, multi-platform deployment, collaboration with an association with specific needs.</p>"
+    },
+    "portfolio": {
+      "title": "My Portfolio",
+      "description": "<p>My portfolio site is a showcase project allowing me to present my technical achievements in an elegant and accessible way.<br />It was designed with particular attention to readability, graphic consistency, and smooth navigation, both on desktop and mobile.</p><ul class='list-disc list-inside ml-4 mb-2'><li>Strengthening my foundations in <b>modern frontend development</b></li><li>Improving my use of <b>TailwindCSS</b></li><li>Applying best practices in <b>responsive design</b></li><li>Regular evolution of the site alongside other projects</li></ul>"
+    },
+    "sqlrewriter": {
+      "title": "SQL Rewriter",
+      "description": "<p><b>SQL Rewriter</b> is an automatic SQL query rewriting tool, developed in Python during my internship at Worldline (LIQUIDITY team).<br />Its main goal: ensure compatibility between <b>Oracle</b> and <b>PostgreSQL</b> by transforming Oracle-specific queries (NVL, (+), DELETE without FROM, etc.) into standard SQL queries.</p><p>The tool automatically analyzes and modifies source files (.c, .pc for Pro*C, .sh, .sql), then saves a transformed version in a dedicated directory.<br />To facilitate review and quality control, an interactive HTML report is generated:</p><ul class='list-disc list-inside ml-4 mb-2'><li>Navigation by file and rewrite status (successful or abandoned)</li><li>Side-by-side presentation of original and modified queries, with visual diff</li><li>Display of transformations, original line, and error messages in case of failure</li><li>Search bar to quickly filter report queries</li></ul><p><b>Skills developed:</b> parsing, complex text manipulation, web report generation, managing large-scale code transformation projects in an industrial context.</p><p>SQL Rewriter was developed during my internship at Worldline. The code belongs to the company and cannot be shared.</p>"
+    },
+    "rasbello": {
+      "title": "Rasbello",
+      "description": "<p><b>Rasbello</b> is a modern and accessible version of the Othello game, designed to run smoothly on Raspberry Pi.<br />Mainly developed in Python with PyQt, the game uses multithreading to responsively manage its different modules (interface, voice, AI, network).</p><ul class='list-disc list-inside ml-4 mb-2'><li><b>Multiple controls:</b> mouse or voice commands, trilingual support (French, Italian, English)</li><li><b>Powerful AI:</b> adapted version of Egaroucid (best open-source Othello AI), C++ engine optimized for Raspberry Pi, Python/C++ interface</li><li><b>Online multiplayer:</b> play against other human players or let the AI play for you (innovative online mode)</li><li><b>Artistic direction:</b> handmade pixel art, multiple resolutions, customization options (board, pieces, etc.)</li><li><b>Accessibility & modding:</b> executable version for easy installation, modding guide to add/modify features or visual content</li></ul>"
+    },
+    "gauntlet": {
+      "title": "Gauntlet of Sight",
+      "description": "<p><b>Gauntlet of Sight</b> is a portable assistive device for visually impaired people.<br />Designed as a smart glove, it integrates a camera in the palm, a microcontroller with haptic feedback (precision vibration motor), and a spatial audio system via headset.<br /><b>Goal:</b> indicate the position of obstacles in the nearby environment, intuitively and unobtrusively.</p><p class='mt-2 mb-1 font-semibold'>Obstacle detection: Fine-tuned version of <b>YOLOv5</b>, trained on a hybrid dataset</p><ul class='list-disc list-inside ml-8'><li>5% real photos of obstacles to recognize</li><li>95% synthetic images generated with Blender API Python (3D model in different angles, lighting, visual contexts)</li></ul><p>The optimized model runs locally on a <b>Raspberry Pi</b>, ensuring lightweight and autonomous execution, without the need for a remote server.</p><p>The glove integrates all hardware components: camera, haptic motor, Raspberry Pi board, power supply.<br />Thanks to this compact integration, GOS offers a discreet, mobile, and economical solution for greater autonomy for visually impaired people.</p>"
+    }
+  }
+}

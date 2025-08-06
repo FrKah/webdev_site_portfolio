@@ -1,6 +1,11 @@
 import { Link, NavLink } from "react-router";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
   return (
     <div className="navbar bg-base-200 shadow-sm">
       <div className="navbar-start">
@@ -17,7 +22,7 @@ const Navbar = () => {
               to="/"
               className={({ isActive }) => (isActive ? "active font-bold" : "")}
             >
-              Home
+              {t("navbar.home")}
             </NavLink>
           </li>
           <li>
@@ -25,7 +30,7 @@ const Navbar = () => {
               to="/projects"
               className={({ isActive }) => (isActive ? "active font-bold" : "")}
             >
-              Project
+              {t("navbar.projects")}
             </NavLink>
           </li>
           <li>
@@ -33,12 +38,23 @@ const Navbar = () => {
               to="/contact"
               className={({ isActive }) => (isActive ? "active font-bold" : "")}
             >
-              Contact
+              {t("navbar.contact")}
             </NavLink>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
+        {/* Language Selector */}
+        <div className="mr-4">
+          <select
+            className="select select-sm"
+            value={i18n.language}
+            onChange={(e) => changeLanguage(e.target.value)}
+          >
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+          </select>
+        </div>
         <label className="toggle text-base-content">
           <input type="checkbox" value="light" className="theme-controller" />
 
@@ -110,7 +126,7 @@ const Navbar = () => {
               to="/"
               className={({ isActive }) => (isActive ? "active font-bold" : "")}
             >
-              Home
+              {t("navbar.home")}
             </NavLink>
           </li>
           <li>
@@ -118,7 +134,7 @@ const Navbar = () => {
               to="/projects"
               className={({ isActive }) => (isActive ? "active font-bold" : "")}
             >
-              Projets
+              {t("navbar.projects")}
             </NavLink>
           </li>
           <li>
@@ -126,7 +142,7 @@ const Navbar = () => {
               to="/about"
               className={({ isActive }) => (isActive ? "active font-bold" : "")}
             >
-              About
+              {t("navbar.about")}
             </NavLink>
           </li>
           <li>
@@ -134,7 +150,7 @@ const Navbar = () => {
               to="/contact"
               className={({ isActive }) => (isActive ? "active font-bold" : "")}
             >
-              Contact
+              {t("navbar.contact")}
             </NavLink>
           </li>
         </ul>
