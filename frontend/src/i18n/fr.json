@@ -1,4 +1,20 @@
 {
+  "techstack": {
+    "languagesTitle": "Langages",
+    "technologiesTitle": "Technologies & Outils"
+  },
+  "education": {
+    "0": {
+      "period": "2022 – 2024",
+      "title": "Lycée Charlemagne – CPGE MP",
+      "description": "Classes préparatoires aux grandes écoles – Mathématiques et Physique (filière MP)."
+    },
+    "1": {
+      "period": "2024 – Aujourd’hui",
+      "title": "EURECOM – École d’ingénieur",
+      "description": "Étudiant en ingénierie informatique, spécialisation en systèmes embarqués et intelligence artificielle."
+    }
+  },
   "home": {
     "imgAlt": "Frédéric Kah",
     "name": "Frédéric Kah",

@@ -1,4 +1,20 @@
 {
+  "techstack": {
+    "languagesTitle": "Languages",
+    "technologiesTitle": "Technologies & Tools"
+  },
+  "education": {
+    "0": {
+      "period": "2022 – 2024",
+      "title": "Lycée Charlemagne – CPGE MP",
+      "description": "Preparatory classes for grandes écoles – Mathematics and Physics (MP track)."
+    },
+    "1": {
+      "period": "2024 – Present",
+      "title": "EURECOM – Engineering School",
+      "description": "Computer engineering student, specializing in embedded systems and artificial intelligence."
+    }
+  },
   "home": {
     "imgAlt": "Frédéric Kah",
     "name": "Frédéric Kah",

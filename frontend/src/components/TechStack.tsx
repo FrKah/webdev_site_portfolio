@@ -20,12 +20,15 @@ const technologies = [
   { name: "Git", icon: "devicon-git-plain colored" },
 ];
 
+import { useTranslation } from "react-i18next";
+
 const TechStack = () => {
+  const { t } = useTranslation();
   return (
     <section className="space-y-10">
       {/* Languages */}
       <div>
-        <h2 className="text-3xl font-semibold mb-4">Languages</h2>
+        <h2 className="text-3xl font-semibold mb-4">{t('techstack.languagesTitle')}</h2>
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-4 justify-items-center">
           {languages.map((t) => (
             <TechnologyCard key={t.name} name={t.name} iconClass={t.icon} />
@@ -35,7 +38,7 @@ const TechStack = () => {
 
       {/* Technologies */}
       <div>
-        <h2 className="text-3xl font-semibold mb-4">Technologies & Outils</h2>
+        <h2 className="text-3xl font-semibold mb-4">{t('techstack.technologiesTitle')}</h2>
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-4 justify-items-center">
           {technologies.map((t) => (
             <TechnologyCard key={t.name} name={t.name} iconClass={t.icon} />

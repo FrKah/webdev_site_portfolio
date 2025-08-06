@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 const EducationTimeline = () => {
+  const { t } = useTranslation();
   return (
     <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
       <li>
@@ -17,10 +20,9 @@ const EducationTimeline = () => {
           </svg>
         </div>
         <div className="timeline-start mb-10 md:text-end">
-          <time className="font-mono italic">2022 – 2024</time>
-          <div className="text-lg font-black">Lycée Charlemagne – CPGE MP</div>
-          Classes préparatoires aux grandes écoles – Mathématiques et Physique
-          (filière MP).
+          <time className="font-mono italic">{t('education.0.period')}</time>
+          <div className="text-lg font-black">{t('education.0.title')}</div>
+          {t('education.0.description')}
         </div>
         <hr />
       </li>
@@ -41,10 +43,9 @@ const EducationTimeline = () => {
           </svg>
         </div>
         <div className="timeline-end md:mb-10">
-          <time className="font-mono italic">2024 – Aujourd’hui</time>
-          <div className="text-lg font-black">EURECOM – École d’ingénieur</div>
-          Étudiant en ingénierie informatique, spécialisation en systèmes
-          embarqués et intelligence artificielle.
+          <time className="font-mono italic">{t('education.1.period')}</time>
+          <div className="text-lg font-black">{t('education.1.title')}</div>
+          {t('education.1.description')}
         </div>
         <hr />
       </li>
