@@ -37,10 +37,10 @@ function Home() {
                 {t("home.projectsBtn")}
               </Link>
               <a
-                href="docs/frederic_kah_cv.pdf"
+                href="https://frkah.github.io/webdev_site_portfolio/docs/frederic_kah_cv.pdf"
                 download
                 className="btn btn-outline border rounded 
-                          hover:bg-white hover:text-black transition-colors duration-300 shadow-md"
+                      hover:bg-white hover:text-black transition-colors duration-300 shadow-md"
               >
                 {t("home.cvBtn")}
               </a>
