@@ -35,7 +35,7 @@ function Home() {
                 Voir mes projets
               </Link>
               <a
-                href="../../public/docs/frederic_kah_cv.pdf"
+                href="docs/frederic_kah_cv.pdf"
                 download
                 className="btn btn-outline border rounded 
                           hover:bg-white hover:text-black transition-colors duration-300 shadow-md"
