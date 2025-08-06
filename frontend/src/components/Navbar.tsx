@@ -139,14 +139,6 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/about"
-              className={({ isActive }) => (isActive ? "active font-bold" : "")}
-            >
-              {t("navbar.about")}
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
               to="/contact"
               className={({ isActive }) => (isActive ? "active font-bold" : "")}
             >
