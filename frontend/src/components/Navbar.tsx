@@ -16,7 +16,7 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 text-xl">
+        <ul className="menu menu-horizontal text-xl">
           <li>
             <NavLink
               to="/"
@@ -47,7 +47,7 @@ const Navbar = () => {
         {/* Language Selector */}
         <div className="mr-4">
           <select
-            className="select select-sm"
+            className="select border-base-300 select-sm"
             value={i18n.language}
             onChange={(e) => changeLanguage(e.target.value)}
           >
@@ -56,7 +56,7 @@ const Navbar = () => {
           </select>
         </div>
         <label className="toggle text-base-content">
-          <input type="checkbox" value="light" className="theme-controller" />
+          <input type="checkbox" value="mylight" className="theme-controller" />
 
           <svg
             aria-label="moon"
