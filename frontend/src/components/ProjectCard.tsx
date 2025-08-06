@@ -7,6 +7,7 @@ type ProjectCardProps = {
   description: React.ReactNode;
   githubUrl?: string;
   downloadUrl?: string;
+  websiteLink?: string;
   images?: string[];
   skills?: string[];
   className?: string;
@@ -73,6 +74,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   githubUrl,
   downloadUrl,
+  websiteLink,
   images = [],
   skills = [],
   className = "",
@@ -108,6 +110,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               className="btn btn-outline"
             >
               Télécharger
+            </a>
+          )}
+          {websiteLink && (
+            <a
+              href={websiteLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline"
+            >
+              Voir le site
             </a>
           )}
         </div>

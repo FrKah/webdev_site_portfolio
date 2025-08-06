@@ -64,8 +64,8 @@ function Projects() {
             </p>
           </>
         }
-        githubUrl="https://github.com/tonrepo/flappy-drone"
-        downloadUrl="/downloads/flappy-drone.zip"
+        githubUrl="https://github.com/FrKah/SiteVolleyASIE"
+        websiteLink="https://site-volley-asie.vercel.app/"
         skills={[
           "Javascript",
           "Typescript",
@@ -74,11 +74,13 @@ function Projects() {
           "DaisyUI",
           "Node.js",
           "Express",
+          "SQL",
+          "Git",
         ]}
       />
 
       <ProjectCard
-        title="My portfolio"
+        title="Mon portfolio"
         description={
           <>
             <p>
@@ -106,9 +108,16 @@ function Projects() {
             </ul>
           </>
         }
-        githubUrl="https://github.com/tonrepo/flappy-drone"
-        downloadUrl="/downloads/flappy-drone.zip"
-        skills={["Javascript", "Typescript", "React", "Tailwind", "DaisyUI"]}
+        githubUrl="https://github.com/FrKah/SiteVolleyASIE"
+        websiteLink="https://frkah.github.io/webdev_site_portfolio"
+        skills={[
+          "Javascript",
+          "Typescript",
+          "React",
+          "Tailwind",
+          "DaisyUI",
+          "Git",
+        ]}
       />
 
       <ProjectCard
@@ -157,10 +166,13 @@ function Projects() {
               transformation de code à grande échelle dans un contexte
               industriel.
             </p>
+            <p>
+              SQL rewriter a été développé dans le cadre de mon stage chez
+              Worldline. Le code appartient à l’entreprise et ne peut donc pas
+              être partagé.
+            </p>
           </>
         }
-        githubUrl="https://github.com/tonrepo/flappy-drone"
-        downloadUrl="/downloads/flappy-drone.zip"
         skills={["Python", "SQL Oracle", "HTML", "CSS", "JavaScript"]}
       />
 
@@ -203,8 +215,7 @@ function Projects() {
             </ul>
           </>
         }
-        githubUrl="https://github.com/tonrepo/flappy-drone"
-        downloadUrl="/downloads/flappy-drone.zip"
+        githubUrl="https://github.com/FrKah/Rasbello"
         images={[rasbello1, rasbello2, rasbello3]}
         skills={["Python", "C++", "Git"]}
       />
@@ -253,8 +264,6 @@ function Projects() {
             </p>
           </>
         }
-        githubUrl="https://github.com/tonrepo/flappy-drone"
-        downloadUrl="/downloads/flappy-drone.zip"
         images={[gauntlet1, gauntlet2, gauntlet3]}
         skills={[
           "Python",

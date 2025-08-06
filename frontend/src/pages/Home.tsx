@@ -73,14 +73,12 @@ function Home() {
         id="skills"
         className="min-h-screen flex flex-row items-center justify-center"
       >
-        <div className="items-start justify-center p-8">
-          <div className="flex w-full min-h-full max-w-6xl p-8 flex-col mx-auto items-center space-y-16">
-            <h2 className="items-start text-5xl md:text-6xl font-bold">
-              Compétences
-            </h2>
-            <div className="text-center">
-              <TechStack />
-            </div>
+        <div className="flex max-w-6xl p-8 flex-col mx-auto items-center space-y-16">
+          <h2 className="items-start text-5xl md:text-6xl font-bold">
+            Compétences
+          </h2>
+          <div className="text-center">
+            <TechStack />
           </div>
         </div>
       </div>
