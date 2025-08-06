@@ -48,6 +48,9 @@
     "contact": "Contact"
   },
   "projects": {
+    "githubBtn": "Voir sur GitHub",
+    "downloadBtn": "Télécharger",
+    "websiteBtn": "Voir le site",
     "title": "Mes projets",
     "volley": {
       "title": "Site de l'association de volley inter-entreprises de Sophia Antipolis (A.S.I.E volley)",

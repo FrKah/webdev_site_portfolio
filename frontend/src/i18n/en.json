@@ -48,6 +48,9 @@
     "contact": "Contact"
   },
   "projects": {
+    "githubBtn": "View on GitHub",
+    "downloadBtn": "Download",
+    "websiteBtn": "View website",
     "title": "My Projects",
     "volley": {
       "title": "Website for Sophia Antipolis Inter-company Volleyball Association (A.S.I.E volley)",

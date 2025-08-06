@@ -1,6 +1,7 @@
 // src/components/ProjectCard.tsx
 import React from "react";
 import TechnologyCard from "./TechnologyCard";
+import { useTranslation } from "react-i18next";
 
 type ProjectCardProps = {
   title: string;
@@ -79,6 +80,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   skills = [],
   className = "",
 }) => {
+  const { t } = useTranslation();
   return (
     <div
       className={`rounded-2xl border border-base-300 bg-base-200 shadow-lg p-6 flex flex-col gap-6 ${className}`}
@@ -99,7 +101,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               rel="noopener noreferrer"
               className="btn btn-outline"
             >
-              Voir sur GitHub
+              {t('projects.githubBtn')}
             </a>
           )}
           {downloadUrl && (
@@ -109,7 +111,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               rel="noopener noreferrer"
               className="btn btn-outline"
             >
-              Télécharger
+              {t('projects.downloadBtn')}
             </a>
           )}
           {websiteLink && (
@@ -119,7 +121,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               rel="noopener noreferrer"
               className="btn btn-outline"
             >
-              Voir le site
+              {t('projects.websiteBtn')}
             </a>
           )}
         </div>
@@ -160,5 +162,5 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     </div>
   );
 };
-
+export default ProjectCard;
 export default ProjectCard;
