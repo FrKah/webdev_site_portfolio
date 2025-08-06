@@ -101,7 +101,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               rel="noopener noreferrer"
               className="btn btn-outline"
             >
-              {t('projects.githubBtn')}
+              {t("projects.githubBtn")}
             </a>
           )}
           {downloadUrl && (
@@ -111,7 +111,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               rel="noopener noreferrer"
               className="btn btn-outline"
             >
-              {t('projects.downloadBtn')}
+              {t("projects.downloadBtn")}
             </a>
           )}
           {websiteLink && (
@@ -121,7 +121,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               rel="noopener noreferrer"
               className="btn btn-outline"
             >
-              {t('projects.websiteBtn')}
+              {t("projects.websiteBtn")}
             </a>
           )}
         </div>
@@ -162,5 +162,4 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     </div>
   );
 };
-export default ProjectCard;
 export default ProjectCard;
